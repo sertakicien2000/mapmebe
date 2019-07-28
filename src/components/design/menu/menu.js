@@ -52,15 +52,14 @@ export default class Menu extends Component {
                     backgroundImage: 'url(' + imgUrl + ')',
                     backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat',
                 }}>
-                    <div className="text-white text-center rgba-stylish-strong py-5 px-4">
+                    <div className="text-white text-center  py-5 px-4">
                         <div className="py-5">
                             <h2 id="h2accueil"><strong>Cuisinier</strong> </h2>
-                            <p className="mb-4 pb-2 px-md-5 mx-md-5">Choisissez bien le choose de bien nouvelle atelier de cuisine <span id="spanheader">Les cours proposés aux particuliers permettent de financer l’achat de matériels et de
-                                        matières premières.</span>
+                            <p className="mb-4 pb-2 px-md-5 mx-md-5">Choisissez bien le choose de bien nouvelle atelier de cuisine <span id="spanheader">Un  app fabricien cuisine est un outil utilisé dans la cuisine pour la préparation de plats</span>
                                 <br /><br />C’est la raison pour laquelle nous souhaitons booster cette activité en grâce à une
                   application web.
                                 </p>
-                                <p>Pour cibler les jeunes actifs entre 25 - 35 ans.</p><span>merci a vous qui visitent le site de <br />
+                                <p>Pour cibler les enfants de +12ans.</p><span>merci a vous qui visitent le site de <br />
 cuisiner afin de manger correctement.</span>
 
                         </div>
