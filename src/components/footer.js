@@ -10,7 +10,7 @@ const FooterPage = () => {
             <h5 className="title">ATELIER CUISINE</h5>
             <p>
             Le plus grand réconfort de ma vieillesse, et qui m'apporte la plus grande satisfaction,
-            <br/> c'est le souvenir agréable de tous les bienfaits et services amicaux que j'ai donnés aux autres.
+            <br/> c'est avec plaisir aussi pour la conception de l'atelier de cuisine pour l'aider de la cuisinier et l'interésser de cuisine.
             </p>
           </MDBCol>
           <MDBCol md="6">
@@ -27,7 +27,7 @@ const FooterPage = () => {
                 <a href="#!">Ville</a>:Antananarivo Atsimondrano
               </li>
               <li className="list-unstyled">
-              <a href="#!">Tana :</a>102 Atsimondranos
+              <a href="#!">Tana :</a>102 Atsimondrano
             </li>
             </ul>
           </MDBCol>
