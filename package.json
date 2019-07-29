@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "atelier",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -35,5 +35,18 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "blabla",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sertakicien2000/mapmebe.git"
+  },
+  "author": "fabricien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sertakicien2000/mapmebe/issues"
+  },
+  "homepage": "https://github.com/sertakicien2000/mapmebe#readme"
 }

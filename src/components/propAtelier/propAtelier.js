@@ -11,7 +11,7 @@ export default class PropAtelier extends Component {
 
     }
     componentDidMount() {
-        axios.get(`http://localhost:8080/api/users/newArticle/${localStorage.id}`)
+        axios.get(`http://valimbavaka.herokuapp.com/api/users/newArticle/${localStorage.id}`)
             .then(response => {
                 console.log('user-article ==== ', response)
                 this.setState({ profil: response.data });
@@ -48,7 +48,7 @@ export default class PropAtelier extends Component {
                             <td>{obj.prix}</td>
                             <td id="des">{obj.description}</td>
                             <td>
-                                <img width="150px" height="50px" src={'http://localhost:8080/api/users/newArticleImage/' + obj.image} alt="pdp" />
+                                <img width="150px" height="50px" src={'http://valimbavaka.herokuapp.com/api/users/newArticleImage/' + obj.image} alt="pdp" />
                             </td>
                             <td>{obj.duree} </td>
                             <td>{obj.placeRes}</td>
@@ -60,8 +60,8 @@ export default class PropAtelier extends Component {
 
                             {obj.visib == true ? (<button  class="btn btn-success" onClick={(e) => {
                                 e.preventDefault()
-                                axios.get(" http://localhost:8080/api/users/cacherAtl/" + obj._id).then(res => {
-                                    axios.get('http://localhost:8080/api/users/newArticle/' + localStorage.id).then(res => {
+                                axios.get("http://valimbavaka.herokuapp.com/api/users/cacherAtl/" + obj._id).then(res => {
+                                    axios.get('http://valimbavaka.herokuapp.com/api/users/newArticle/' + localStorage.id).then(res => {
                                         console.log(res.data)
                                         this.setState({ profil: res.data })
                                     })
@@ -72,8 +72,8 @@ export default class PropAtelier extends Component {
                             }}>Activer</button>) : (<button   class="btn btn-warning" onClick={(e) => {
                                 e.preventDefault()
                                 console.log(obj._id)
-                                axios.get("http://localhost:8080/api/users/affichAtl/" + obj._id).then(res => {
-                                    axios.get('http://localhost:8080/api/users/newArticle/' + localStorage.getItem('id')).then(res => {
+                                axios.get("http://valimbavaka.herokuapp.com/api/users/affichAtl/" + obj._id).then(res => {
+                                    axios.get('http://valimbavaka.herokuapp.com/api/users/newArticle/' + localStorage.getItem('id')).then(res => {
                                         console.log(res.data)
                                         this.setState({ profil: res.data })
                                     })

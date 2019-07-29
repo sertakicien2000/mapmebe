@@ -11,7 +11,7 @@ export default class ListTout extends Component {
 
     }
     componentDidMount() {
-        axios.get('http://localhost:8080/api/users/newArticle')
+        axios.get('http://valimbavaka.herokuapp.com/api/users/newArticle')
             .then(response => {
                 console.log('i am a response', response)
                 this.setState({ produit: response.data });
@@ -35,7 +35,7 @@ export default class ListTout extends Component {
                             <div id="ligne" className="card" key={obj._id}>
                                 <div className="container">
                                     <center><img className="card " width="50%" height="5%"
-                                        src={'http://localhost:8080/api/users/newArticleImage/' + obj.image}
+                                        src={'http://valimbavaka.herokuapp.com/api/users/newArticleImage/' + obj.image}
                                         alt="pdp" /></center>
                                     
                                 </div>
@@ -75,7 +75,7 @@ export default class ListTout extends Component {
                                                                     <input name="email" placeholder="Email" onChange={this.handleChange} value={this.state.value} /><br></br>
 
                                                                     <button type="button" class="btn btn-warning" onClick={() => {
-                                                                        axios.post("http://localhost:8080/api/users/particulier/" + obj._id, {
+                                                                        axios.post("http://valimbavaka.herokuapp.com/api/users/particulier/" + obj._id, {
                                                                             nom: this.state.nom,
                                                                             prenom: this.state.prenom,
                                                                             phone: this.state.phone,
@@ -83,7 +83,7 @@ export default class ListTout extends Component {
 
                                                                         }).then(res => {
                                                                             console.log(res.data);
-                                                                            axios.get("http://localhost:8080/api/users/newArticle").then(res => {
+                                                                            axios.get("http://valimbavaka.herokuapp.com/api/users/newArticle").then(res => {
 
                                                                                 this.setState({ profil: res.data })
                                                                                 console.log(this.state.profil)
